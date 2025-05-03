@@ -30,3 +30,72 @@ the logic of collaborative will now play its role rohan needs to tell me that he
 
 -----------------------------------------------------------TRUNK BAED DEVELOPMENT--------------------------------------
 Used for short term feature branch and instantly forwarded to the main/trunk branch
+
+
+
+
+
+----------------------------------------------------------Differences-------------------------------------------
+
+
+  Feature           ||	Trunk-Based Development (TBD)	               ||  Branch-Based Development (BBD)
+
+   Frequency        ||	Multiple small merges per day	               ||  Fewer, larger merges (riskier)
+
+ Conflict Handling  ||     Frequent small conflicts (easy to resolve)  ||	Big merge conflicts (harder to resolve)
+
+ CI/CD Suitability  ||	Best for continuous deployment	               ||   Needs extra steps for CI/CD
+
+
+
+
+---------------------------------------Benefits------------------------------------------------------
+
+Trunk-Based Development (TBD) 
+Faster Releases – Small, frequent changes mean quicker deployments.
+
+Fewer Merge Conflicts – Since everyone works on the same branch, conflicts are smaller and easier to fix.
+
+Better CI/CD – Works great with automated testing and deployment.
+
+Branch-Based Development (BBD) 
+Isolated Work – Developers can work without disturbing others.
+
+Better for Large Features – Good for big changes that take weeks/months.
+
+Clear History – Each feature has its own branch, making tracking easier.
+
+-------------------------------------------------Challenges---------------------------------------------------
+Trunk-Based Development (TBD) 
+Requires Discipline – Developers must commit small, working changes frequently.
+
+Broken Builds Risk – Bad code in main can block everyone.
+
+Not Ideal for Big Features – Hard to work on large changes without breaking things.
+
+Branch-Based Development (BBD) 
+Merge Hell – Long-lived branches cause big, painful conflicts.
+
+
+----------------------------------------------------Differences---------------------------------------------------
+
+Feature             ||	Git Flow	               ||          GitHub Flow
+
+Merge Frequency	    ||  Infrequent (big merges)        ||         Frequent (small PRs)
+Release Process     ||	Formal (via release branches)  ||        Direct from main (after PR review)	
+Conflict Risk       ||	High (long-lived branches)     ||	 Medium (short-lived branches)	Low (small, frequent merges)
+CI/CD Compatibility ||	Needs extra steps	       ||        Works well
+
+
+
+
+
+
+
+
+
+
+
+
+
+
