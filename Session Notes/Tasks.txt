@@ -87,6 +87,46 @@ Conflict Risk       ||	High (long-lived branches)     ||	 Medium (short-lived br
 CI/CD Compatibility ||	Needs extra steps	       ||        Works well
 
 
+-----------------------------------------------------Maven----------------------------------------------------
+
+Maven is a tool that helps manage:
+
+Project builds (compile, test, package, deploy)
+
+Dependencies (external JARs)
+
+Project structure and documentation
+
+Plugins for extended tasks like code analysis, testing, etc.
+
+2. Key Concepts:
+POM (Project Object Model):
+An XML file named pom.xml that holds project configuration like dependencies, plugins, versioning, etc.
+
+
+
+Dependencies:
+
+
+External libraries your project needs (e.g., JUnit, Spring). Maven downloads them from a central repository.
+
+Repositories:
+
+Local Repository: .m2 folder on your system
+
+Central Repository: Online repository hosted by Maven
+
+Remote Repository: Your organization's or a third-party repository
+
+
+
+Plugins:
+
+
+Add functionality like compiling Java code, running tests, packaging JARs/WARs, etc.
+
+
+
 
 
 
