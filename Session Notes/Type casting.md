@@ -15,7 +15,6 @@ Common in arithmetic expressions.
 E.g-
 
 '''Java
-
  public class ImplicitCasting {
     public static void main(String[] args) {
         int a = 10;
