@@ -14,7 +14,7 @@ Common in arithmetic expressions.
 
 E.g-
 
-----------Code Block----------------------
+'''Code Block'''
 
  public class ImplicitCasting {
     public static void main(String[] args) {
@@ -36,7 +36,7 @@ Used when you need to force conversion, often from a larger data type to a small
 Might lead to data loss or unexpected results
 
 E.g-
-------------------Code Block-------------------
+'''Code Block'''
 
 public class ExplicitCasting {
     public static void main(String[] args) {
