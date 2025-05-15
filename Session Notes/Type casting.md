@@ -14,7 +14,7 @@ Common in arithmetic expressions.
 
 E.g-
 
-'''Code Block'''
+'''Java
 
  public class ImplicitCasting {
     public static void main(String[] args) {
@@ -25,7 +25,7 @@ E.g-
         System.out.println("Converted to double: " + b);
     }
 }
-
+'''
 
 
 2. Explicit Typecasting (Manual Type Conversion)
@@ -36,7 +36,7 @@ Used when you need to force conversion, often from a larger data type to a small
 Might lead to data loss or unexpected results
 
 E.g-
-'''Code Block'''
+'''Java
 
 public class ExplicitCasting {
     public static void main(String[] args) {
@@ -47,3 +47,4 @@ public class ExplicitCasting {
         System.out.println("Converted to int (fraction lost): " + b);
     }
 }
+'''
