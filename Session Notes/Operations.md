@@ -148,15 +148,16 @@ public class Main {
 
 
 -------------------------------------------------------------
-Summary Table
+###Summary Table
 -------------------------------------------------------------------
 
-Relationship  |	Type          |	Lifetime Tied? |	Example
-Inheritance   |	IS-A          |	Yes            |   Dog IS-A Animal
-Association   |	HAS-A         |	No             |	Car HAS-A Person
-Aggregation   |	HAS-A         |No              |	Car HAS-A Engine
-Composition   |	Strong HAS-A  |	Yes            |  	Mobile HAS-A Battery
-Dependency    |	Uses          |	No             |	Office uses Printer
+|Relationship  |	Type          |	Lifetime Tied? |	Example              |
+|--------------|----------------------|----------------|-----------------------------|
+|Inheritance   |	IS-A          |	Yes            |   Dog IS-A Animal           |
+|Association   |	HAS-A         |	No             |	Car HAS-A Person     |
+|Aggregation   |	HAS-A         |No              |	Car HAS-A Engine     |
+|Composition   |	Strong HAS-A  |	Yes            |  	Mobile HAS-A Battery |
+|Dependency    |	Uses          |	No             |	Office uses Printer  |
 
 
 
