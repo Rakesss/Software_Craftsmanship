@@ -120,7 +120,7 @@ Definition:
 A class depends on another if it uses it temporarily, typically through method parameters.
 
 Example:
-'''java
+<pre>'''java
 class Printer {
     void print(String doc) {
         System.out.println("Printing: " + doc);
@@ -140,7 +140,7 @@ public class Main {
         office.doPrinting(printer, "Report.pdf");  
         // Output: Printing: Report.pdf
     }
-}
+}'''</pre>
 
 
 -------------------------------------------------------------
