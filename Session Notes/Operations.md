@@ -5,6 +5,7 @@ Definition:
 Inheritance allows one class (child/subclass) to inherit the attributes and behaviors (methods) of another class (parent/superclass). This forms an "is-a" relationship.
 
 Example:
+<pre>'''java
 class Animal {
     void speak() {
         System.out.println("Animal speaks");
@@ -23,7 +24,7 @@ public class Main {
         Dog d = new Dog();
         d.speak();  // Output: Dog barks
     }
-}
+}'''</pre>
 
 ------------------------------------------------------------
 2. Association (HAS-A Relationship)
@@ -32,6 +33,7 @@ Definition:
 Association is a general relationship where one class uses or is connected to another. It can be one-to-one, one-to-many, etc.
 
 Example:
+<pre>'''java
 class Person {
     String name;
     Person(String name) {
@@ -53,7 +55,7 @@ public class Main {
         Car c = new Car(p);
         System.out.println(c.owner.name);  // Output: Alice
     }
-}
+}'''</pre>
 ---------------------------------------------------------------------
 3. Aggregation (HAS-A with Ownership)
 ----------------------------------------------------------------------
@@ -61,6 +63,7 @@ Definition:
 A special form of association where one class contains another class, but the contained class can exist independently. It implies a "whole-part" relationship.
 
 Example:
+<pre>'''java
 class Engine {
     void start() {
         System.out.println("Engine started");
@@ -85,7 +88,7 @@ public class Main {
         Car car = new Car(e);
         car.startCar();  // Output: Engine started
     }
-}
+}'''</pre>
 ------------------------------------------------------------------------
 4. Composition (Strong HAS-A)
 ------------------------------------------------------------------------
@@ -93,6 +96,7 @@ Definition:
 A stronger form of aggregation. When the container object is destroyed, the contained objects are also destroyed. It’s a part-of relationship where the lifetime of the part depends on the whole.
 
 Example:
+<pre>'''java
 class Battery {
     Battery() {
         System.out.println("Battery created");
@@ -112,7 +116,7 @@ public class Main {
         Mobile phone = new Mobile();
         // Output: Battery created
     }
-}
+}'''</pre>
 --------------------------------------------------------------------------
 5. Dependency (Uses Relationship)
 --------------------------------------------------------------------------
