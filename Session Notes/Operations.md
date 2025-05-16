@@ -120,7 +120,8 @@ Definition:
 A class depends on another if it uses it temporarily, typically through method parameters.
 
 Example:
-'''Javaclass Printer {
+'''Java
+class Printer {
     void print(String doc) {
         System.out.println("Printing: " + doc);
     }
