@@ -1,5 +1,5 @@
-
-------------------------------------------------------------------------Problem-Sattement-Analysis--------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                    Problem-Sattement-Analysis
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 It's election night! 
@@ -21,8 +21,8 @@ Behaviour-Count-Vote,Cast-Vote,Record-Vote,Check-for-Vote(Valid/Invalid)
 
 
 
-
--------------------------------------------------------EXAMPLES---------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+                                                           EXAMPLES
 ------------------------------------------------------------------------------------------------------------
 
 
@@ -45,11 +45,29 @@ Attributes-Name,Id,Phone-no,QualiFication,Specilization,Experience,Status
 Behaviour-Diagnose-Patient,Discharge-Patients,Treat Patients,Refer-Patients,Prescribe-Patients,Take-CheckupRounds
 
 
+------------------------------------------------------------------------------------------------------------------------------------------
+2.Develop a Student Attendance Management System for a school , where teachers can mark daily attendance,
+------------------------------------------------------------------------------------------------------------------------------------------
 
-2.Develop a Student Attendance Management System for a school or college, where teachers can mark daily attendance,
+
+Class-School
+Attribute-Name,Address,School-Id,Capacity,Departments,Contact-Info
+Behaviour-Enroll-Students,Conduct-Class,Manage-Records,Manage Academic Records
 
 
 
 
+Class-Teacher
+Attribute-Name,Address,Teacher-Id,Specality,Department,Experience,Salary
+Behaviour-Teach-Class,Take-Attendence,Organize-Class,Conduct-Exam
+
+
+
+
+
+
+Class-Student
+Attribute-Name,Address,Student-Id,Attendence Record,Department,Class
+Behaviour-Attend-Class,Take-Exam,Do-Homework,Follow-Rules,Apply or Leave
 
 
