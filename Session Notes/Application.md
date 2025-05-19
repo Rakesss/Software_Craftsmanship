@@ -27,10 +27,3 @@ bheaviour -name,age,gender,phone,id,address,
 
 
 attribute-login,logout
-
----
-class-result
--
-behaviour-id,taskname,taskstatus,
-
-attribute-showresult
