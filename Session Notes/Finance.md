@@ -25,15 +25,15 @@ class-user
 
 attribute-name ,id ,email,contact,address
 
-behaviour-get/set, checkrecord,switchaccounts,addaccount,removeaccount,updateaccount
+behaviour-get/set, checkexpense,switchaccounts,addaccount,removeaccount,updateaccount
 
 ---
 
-class-record
+class-expense
 
 attribute-userid,transactionid,transactiontype,transactiondate,transactiontime
 
-behaviour-get/set
+behaviour-get
 
 ---
 
@@ -43,13 +43,6 @@ attribute-userid,date,time,cateagory,tarnsactionid
 
 behaviour-get/set
 
----
-
-calss-expense
-
-attribute-listoftransaction
-
-behaviour-get/set
 
 ---
 
