@@ -12,8 +12,7 @@ ANALYSIS
 1. we need an user(record income/expenses/categorize transactions/manage different accounts)
 2. we need expense(userid/transactionid/category)
 3. we need an transaction(userid/date/time/category)
-4. we need account [Expense Account,Income Account,Investment Account,Asset Account]  (accountstype/username /userid/
-5. we need an income(salary/bonous/passive income)
+4. we need an income(salary/bonous/passive income)
 
 --- 
 
@@ -45,17 +44,10 @@ behaviour-get/set
 
 ---
 
-calss-account
-
-attribute-userid , name , accounttype
-
-attribute-get/set
-
----
 
 class-income
 
-attribute-userid,accounttype,salary,bonous,paassiveincome
+attribute-userid,salary,bonous,paassiveincome
 
 behaviour-get/set
 
