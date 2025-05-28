@@ -29,4 +29,4 @@ Analysis:
 3. we need an team(name,id,list(members of same role))
 4. we need an task(name,id,duedate,priority,status)
 5. we need an workflow(id,project,progress)
-6. we need an progress(id,task,progress)
+6. we need an stage(id,task,progress)
