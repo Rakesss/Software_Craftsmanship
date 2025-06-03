@@ -14,8 +14,9 @@ Questions-
 ---
 Analysis-
 -
-1. We need an EntryGate(no,status,type)
+1. We need an EntryGate(no,status,type,reason)
 2. We need an ExitGate(no,status,type)
-3. We need an sensor(id,status,time,type)
+3. We need an sensor(id,status,time,type,verify)
 4. we need an vechile(name,id,ownerid,lisenceplateno,type)
-5. we need an record(vechicle(check-in,check-out),date)
+5. we need to verify(Date,time,vechicledata)
+6. we need an record(vechicle(check-in,check-out),date)
