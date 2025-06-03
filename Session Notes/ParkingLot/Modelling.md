@@ -1,16 +1,16 @@
 Modelling
 -
 
-class-entrygate
--
+class-entrygate            | enum;
+-                           
 
-attributes-gateno.,status(open/undermaintainance/closed),type(Automatic slider/barrier),verify
-
-
-behaviour-get/set,update status 
+attributes-gateno.,status(open/undermaintainance/closed),type(Automatic slider/barrier), reason
 
 
-class-exitgate
+behaviour-get/set,update status ,update reason
+
+
+class-exitgate    | enum;
 -
 
 attributes-gateno.,status(open/undermaintainance/closed),type(Automatic slider/barrier)
@@ -20,10 +20,10 @@ behaviour-get/set,update status
 
 
 
-class-snesor
+class-sensor
 -
 
-attributes-id,status(active/inactive),type(motion/position),time
+attributes-id,status(active/inactive),type(motion/position),time,verify
 
 
 behaviour-get/set,update(status/time),scan vechicle
