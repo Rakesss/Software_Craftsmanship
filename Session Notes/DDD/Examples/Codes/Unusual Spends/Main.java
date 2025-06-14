@@ -2,7 +2,7 @@
 
 Public class Main {
 
-    public static <String> void main(String args[]) {
+    public static String void main(String args[]) {
 
         User u1 = new User("01", "Rahul", "rahul@gmail.com", "9678412898");
         User u2 = new User("02", "Shivam", "shivam@gmail.com", "8573624356");
