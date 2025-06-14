@@ -1,23 +1,46 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        User u1 = new User("01", "Rahul", "rahul@gmail.com", "9678412898");
-        User u2 = new User("02", "Shivam", "shivam@gmail.com", "8573624356");
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter user ID: ");
+        String userId = scanner.nextLine();
+        System.out.print("Enter name: ");
+        String name = scanner.nextLine();
+        System.out.print("Enter email: ");
+        String email = scanner.nextLine();
+        System.out.print("Enter mobile: ");
+        String mobile = scanner.nextLine();
 
-        CreditCard Card = new CreditCard("0101", "01");
-        CreditCard card1 = new CreditCard("1002", "01");
+        User user = new User(userId, name, email, mobile);
+
+        System.out.print("Enter credit card number: ");
+        String cardNumber = scanner.nextLine();
+        CreditCard card = new CreditCard(cardNumber, userId);
 
         SpendingCategory groceries = SpendingCategory.GROCERIES;
         SpendingCategory travel = SpendingCategory.TRAVEL;
 
-        Merchant m1 = new Merchant("01", "Dmart", groceries);
-        Merchant m2 = new Merchant("02", "RedBus", travel);
+        System.out.print("Enter merchant ID: ");
+        String merchantId = scanner.nextLine();
+        System.out.print("Enter merchant name: ");
+        String merchantName = scanner.nextLine();
 
-        Transaction T1 = new Transaction("2", 500, "01", "0101", "5.30pm");
-        Transaction T2 = new Transaction("5", 750, "02", "1002", "7.30AM");
+        Merchant m = new Merchant(merchantId, merchantName, groceries);
 
-        System.out.println("User:" + User.name);
+        System.out.print("Enter transaction ID: ");
+        String transId = scanner.nextLine();
+        System.out.print("Enter transaction amount: ");
+        double amount = scanner.nextDouble();
+        scanner.nextLine(); // Consume newline
+        System.out.print("Enter credit card ID for transaction: ");
+        String cardId = scanner.nextLine();
+
+        Transaction t = new Transaction(transId, amount, merchantId, cardId);
+        System.out.println("Transaction Sucessfull From User: " + User.name);
+
+        scanner.close();
     }
 }
