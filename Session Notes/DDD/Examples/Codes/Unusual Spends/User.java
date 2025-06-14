@@ -1,4 +1,4 @@
-public class User {
+public class User  {
     private final String id;
     private String name;
     private String email;
@@ -17,7 +17,4 @@ public class User {
         cards.add(card);
     }
 
-    public void spend(double amount) {
-        // Implement logic to record spend (maybe through a transaction service)
-    }
 }

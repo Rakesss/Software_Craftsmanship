@@ -1,4 +1,4 @@
-public class Merchant {
+public class Merchant  {
     private final String id;
     private final String name;
     private final SpendingCategory category;
