@@ -1,7 +1,10 @@
 
+import java.time.LocalDateTime;
 import java.util.Scanner;
 
 public class Main {
+    private static LocalDateTime LocalDateTime;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -28,7 +31,7 @@ public class Main {
         System.out.print("Enter merchant name: ");
         String merchantName = scanner.nextLine();
 
-        Merchant m = new Merchant(merchantId, merchantName, groceries);
+        Merchant m = new Merchant(merchantId, merchantName, SpendingCategory.GROCERIES);
 
         System.out.print("Enter transaction ID: ");
         String transId = scanner.nextLine();
@@ -38,8 +41,9 @@ public class Main {
         System.out.print("Enter credit card ID for transaction: ");
         String cardId = scanner.nextLine();
 
-        Transaction t = new Transaction(transId, amount, merchantId, cardId);
+        Transaction t = new Transaction(transId, amount, merchantId, cardId, LocalDateTime);
         System.out.println("Transaction Sucessfull From User: " + User.name);
+        System.out.println("Time" + LocalDateTime.getMonth());
 
         scanner.close();
     }
